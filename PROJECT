@@ -7,4 +7,13 @@ layout:
 - go.kubebuilder.io/v4
 projectName: ignition-server-operator
 repo: github.com/sp-yduck/ignition-server-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  domain: sp-yduck.com
+  group: ignition
+  kind: Config
+  path: github.com/sp-yduck/ignition-server-operator/api/v1alpha1
+  version: v1alpha1
 version: "3"
